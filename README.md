@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# reactjs-test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objetivos:
 
-## Available Scripts
+1- Crear una aplicación react (se puede utilizar [CRA](https://create-react-app.dev/))
 
-In the project directory, you can run:
+2- Consumir API de resultado de hoteles: https://basset.free.beeceptor.com/reactjs-test/accommodations
 
-### `npm start`
+3- Renderizar los clusters de hoteles en una listado ajustandose correctamente para mobile (diseño https://www.figma.com/file/6pc1svdak2qrGKrXCBAy10/Cluster-hoteles?node-id=1%3A357)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4- La app tiene que tener un tema de colores configurado que permita elegir el color de fondo del cluster (default: #FFFFFF) y el color de fondo del botón "Ver hotel" (default: #126AFF). Estos dos colores tienen que ser modificables en dos inputs dentro de la app.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Requerimientos:
 
-### `npm test`
+* Las únicas libreria que se puede agregar además de las que instala [CRA](https://create-react-app.dev/) son: 
+  * [Material-UI](https://material-ui.com/)
+  * Libreria de CSS in JS (ej: [Emotion JS](https://emotion.sh/docs/introduction), [Styled Components](https://styled-components.com/), etc.)
+* Utilizar la [nueva API de Hooks de react](https://reactjs.org/docs/hooks-intro.html)
+* Utilizar la [nueva api de Context de react](https://reactjs.org/docs/context.html)
+* Utilizar FlexBox
+* Utilizar Typescript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Aclaraciones:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Ignorar el resto de los campos que no esten dentro de `clusters` en el json de respuesta de la API
+* Limite máximo de pantalla mobile: `425px`
